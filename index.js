@@ -1,6 +1,5 @@
 function calculateTax(amount) {
-  const taxValue = 0.1 * amount;
-  return taxValue;
+  return 0.1 * amount;
 }
 calculateTax(100);
 
@@ -11,10 +10,7 @@ function convertToUpperCase(text) {
 convertToUpperCase("hello world");
 
 function findMaximum(num1, num2) {
-  if (num1 > num2) {
-    return num1;
-  } else {    return num2;
-  }
+  return Math.max(num1, num2);
 }
 findMaximum(5, 10);
 
@@ -27,8 +23,7 @@ isPalindrome("racecar");
 
 function calculateDiscountPrice(originalPrice, discountPercentage) {
   const discountAmount = (discountPercentage / 100) * originalPrice;
-  const discountedPrice = originalPrice - discountAmount;
-  return discountedPrice;
+  return originalPrice - discountAmount;
 }
 calculateDiscountPrice(100, 20);
 
