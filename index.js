@@ -31,3 +31,11 @@ function calculateDiscountPrice(originalPrice, discountPercentage) {
   return discountedPrice;
 }
 calculateDiscountPrice(100, 20);
+
+module.exports = {
+  calculateTax,
+  convertToUpperCase,
+  findMaximum,
+  isPalindrome,
+  calculateDiscountPrice
+};
