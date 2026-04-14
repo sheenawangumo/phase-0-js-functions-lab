@@ -1,41 +1,38 @@
 function calculateTax(amount) {
-  return 0.1 * amount;
+ 
+  return amount * 0.10;
 }
-calculateTax(100);
-
 function convertToUpperCase(text) {
-  const upperCaseText = text.toUpperCase();
-  return upperCaseText;
+  
+  return text.toUpperCase();
 }
-convertToUpperCase("hello world");
-
 function findMaximum(num1, num2) {
+ 
   return Math.max(num1, num2);
 }
-findMaximum(5, 10);
+
 
 function isPalindrome(word) {
+  
   let lowerCaseWord = word.toLowerCase();
-  let reversedWord = lowerCaseWord.split("").reverse().join("");
+  
+ 
+  let reversedWord = lowerCaseWord.split('').reverse().join('');
+  
+
   return lowerCaseWord === reversedWord;
 }
-isPalindrome("racecar");
+function calculateDiscountedPrice(originalPrice, discountPercentage) {
 
-function calculateDiscountPrice(originalPrice, discountPercentage) {
-  const discountedPrice = (discountPercentage / 100) * originalPrice;
-  if discountedPrice === 0 {
-    return originalPrice;
-  } 
-  else {
-    return originalPrice - discountedPrice;
-  }
+  let discountAmount = originalPrice * (discountPercentage / 100);
+  
+
+  return originalPrice - discountAmount;
 }
-calculateDiscountPrice(100, 20);
 
-module.exports = {
-  calculateTax,
-  convertToUpperCase,
-  findMaximum,
-  isPalindrome,
-  calculateDiscountPrice
-};
+
+
+
+
+
+module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
