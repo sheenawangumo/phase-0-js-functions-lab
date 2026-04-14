@@ -22,8 +22,13 @@ function isPalindrome(word) {
 isPalindrome("racecar");
 
 function calculateDiscountPrice(originalPrice, discountPercentage) {
-  const discountAmount = (discountPercentage / 100) * originalPrice;
-  return originalPrice - discountAmount;
+  const discountedPrice = (discountPercentage / 100) * originalPrice;
+  if discountedPrice === 0 {
+    return originalPrice;
+  } 
+  else {
+    return originalPrice - discountedPrice;
+  }
 }
 calculateDiscountPrice(100, 20);
 
